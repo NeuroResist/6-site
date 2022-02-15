@@ -718,3 +718,24 @@ html { overflow-x: hidden; }
     margin-bottom: 30px;
     border-radius: 5px;
 }
+#burger1{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+#burger{
+    display: none;
+}
+#burger:checked + label {
+    transform: rotate(90deg);
+}
+.hidden-text{
+    position: absolute;
+    display: none;
+}
+#burger:checked .hidden-text{
+    display: block;
+    color: red;
+}
