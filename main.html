@@ -18,11 +18,11 @@
     <div class="menu">
         <img class="logo" src="img/logo.svg" alt="logo">
         <ul class="menu__ul">
-            <li class="menu__li">Home</li>
-            <li class="menu__li">Order</li>
-            <li class="menu__li">Company</li>
-            <li class="menu__li">FAQ</li>
-            <li class="menu__li">Contact</li>
+            <li class="menu__li "><a class="underline" href="#">Home</a></li>
+            <li class="menu__li "><a class="underline" href="#">Order</a></li>
+            <li class="menu__li "><a class="underline" href="#">Company</a></li>
+            <li class="menu__li "><a class="underline" href="#">FAQ</a></li>
+            <li class="menu__li "><a class="underline" href="#">Contact</a></li>
             <button class="menu__button cart">
                 <img src="img/Frame.svg" alt="Frame">
                 <div class="cart__number">0</div>
@@ -30,8 +30,15 @@
             <input type="checkbox" id="burger">
             <label for="burger" id="burger1">
                 <img src="img/burger.png" alt="burger">
-                <p class="hidden-text">dohasuh</p>
             </label>
+            <div class="hidden-text">
+                <ul class="hidden-menu__ul">
+                    <li class="hidden-menu__li"><a class="underline" href="#">Home</a></li>
+                    <li class="hidden-menu__li"><a class="underline" href="#">Order</a></li>
+                    <li class="hidden-menu__li"><a class="underline" href="#">Company</a></li>
+                    <li class="hidden-menu__li"><a class="underline" href="#">FAQ</a></li>
+                    <li class="hidden-menu__li"><a class="underline" href="#">Contact</a></li>
+            </div>
         </ul>
     </div>
 </header>
@@ -103,11 +110,10 @@
     <section class="burgers">
         <div class="burgers__top-text variations">
             <h1 class="variations__header">Browse our menu</h1>
-            <p class="variations__text">Use our menu to place an order online, or <span
-                    style="color: #35B8BE">phone</span> our store<br>to place a pickup order. Fast and fresh food.</p>
+            <p class="variations__text">Use our menu to place an order online, or <a class="phone" href="tel:+612332333">phone</a></span> our store<br>to place a pickup order. Fast and fresh food.</p>
         </div>
         <div class="burgers__buttons buttons">
-            <button class="buttons__blue">Burgers</button>
+            <button style="width: 147px" class="buttons__white">Burgers</button>
             <button style="width: 132px" class="buttons__white">Sides</button>
             <button style="width: 137px" class="buttons__white">Drinks</button>
         </div>
@@ -121,7 +127,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 9.20 USD</p>
@@ -133,7 +139,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 10.00 USD</p>
@@ -145,7 +151,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 8.00 USD</p></div>
@@ -156,7 +162,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 9.99 USD</p></div>
@@ -167,7 +173,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 9.20 USD</p></div>
@@ -178,7 +184,7 @@
                         industry.</p>
                     <div class="burger-list__buttons">
                         <button class="burger-list__first-button">1</button>
-                        <button class="burger-list__second-button">Add to card</button>
+                        <button class="burger-list__second-button hover-button">Add to card</button>
                     </div>
                 </div>
                 <p class="burger-list__price">$ 8.00 USD</p></div>
@@ -208,7 +214,7 @@
             <p class="call-us-left-block__text">Lorem Ipsum is simply dummy text of the printing and<br>typesetting
                 industry. Lorem Ipsum has been the
                 industry's<br>standard dummy text ever since the 1500.</p>
-            <button class="call-us__button">Ph. +61 233 2333</button>
+            <button class="call-us__button"><a class="phone-button" href="tel:+612332333">Ph. +61 233 2333</a></button>
         </div>
         <div class="about-us-right-block">
             <img src="img/cafe.png" alt="cafe">
@@ -242,21 +248,21 @@
         <div class="map__right-block column-menu">
             <div class="column-menu__block" style="margin-right: 16px">
                 <h1 class="column-menu__h1">Company</h1>
-                <h2 class="column-menu__h2">Home</h2>
-                <h2 class="column-menu__h2">Order</h2>
-                <h2 class="column-menu__h2">FAQ</h2>
-                <h2 class="column-menu__h2">Contact</h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Home</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Order</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">FAQ</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Contact</a></h2>
             </div>
             <div class="column-menu__block" style="margin-right: 16px">
-                <h1 class="column-menu__h1">TEMPLATE</h1>
-                <h2 class="column-menu__h2">Style Guide</h2>
-                <h2 class="column-menu__h2">Changelog</h2>
-                <h2 class="column-menu__h2">Licence</h2>
-                <h2 class="column-menu__h2">Webflow University</h2>
+                <h1 class="column-menu__h1"><a class="a" href="#">TEMPLATE</a></h1>
+                <h2 class="column-menu__h2"><a class="a" href="#">Style Guide</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Changelog</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Licence</a></h2>
+                <h2 class="column-menu__h2"><a class="a" href="#">Webflow University</a></h2>
             </div>
             <div class="column-menu__block" style="justify-content: flex-start;">
                 <h1 class="column-menu__h1">FLOWBASE</h1>
-                <h2 class="column-menu__h2"  style="margin-top: 26px">More Cloneables</h2>
+                <h2 class="column-menu__h2"  style="margin-top: 26px"><a class="a" href="#">More Cloneables</a></h2>
             </div>
 
         </div>
