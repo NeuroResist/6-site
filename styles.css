@@ -728,9 +728,11 @@ html { overflow-x: hidden; }
 #burger1{
     display: flex;
     align-items: center;
+    flex-direction: column;
     margin-left: 15px;
     cursor: pointer;
     position: relative;
+    justify-content: center;
 }
 #burger{
     display: none;
@@ -804,4 +806,12 @@ html { overflow-x: hidden; }
 .underline:hover{
     border-bottom: #35B8BE 1px solid;
     margin-bottom: -1px;
+}
+.burger-menu{
+width: 25px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: black;
+    margin: 2px 0;
+    border: 1px #000000 solid;
 }
